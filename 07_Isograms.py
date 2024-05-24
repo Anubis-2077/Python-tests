@@ -7,11 +7,12 @@ Assume the empty string is an isogram. Ignore letter case."""
 def is_isogram(string):
     string = string.lower()  
     letters = list(string)   
-    unique_letters = set(letters)  # Crear un conjunto de letras únicas
+    unique_letters = set(letters) 
     
-    # Comparar la longitud del conjunto de letras únicas con la longitud de la lista original
+   
     return len(unique_letters) == len(letters)
 
+#pruebas 
 def basic_test_cases():      
     assert is_isogram("Dermatoglyphics") == True, "Test case 1 failed"
     assert is_isogram("isogram") == True, "Test case 2 failed"
